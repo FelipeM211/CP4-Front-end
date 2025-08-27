@@ -264,3 +264,9 @@ body {
         margin-bottom: 1.5rem;
     }
 }
+    
+
+.carousel-inner img {
+  max-height: 800px;
+  object-fit: cover;
+}
