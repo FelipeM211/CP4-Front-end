@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnFinalizar = document.getElementById('btn-finalizar');
     
     // Carregar itens do carrinho do localStorage
-    let carrinho = JSON.parse(lStorage.getItem('carrinho')) || [];
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     
     // Inicializar a página
     atualizarCarrinho();
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
             itemElement.innerHTML = `
                 <div class="row align-items-center">
                     <div class="col-3 col-md-2">
-                        <img src="${item.imagem}" alt="${item.nome}" class="img-fluid imagem-produto-carrinho">
+                        <img src="${item.imagem}" alt="${item.nome}" class="img-fluid imagem-produto-carrinho" onerror="this.src='../../src/img/sem-imagem.png'">
                     </div>
                     <div class="col-5 col-md-6">
                         <h5 class="mb-1">${item.nome}</h5>
@@ -311,7 +311,7 @@ function adicionarAoCarrinho(id) {
             description: "Garrafa de aço inoxidável, mantém temperatura por 24h",
             price: "R$ 89,90",
             priceValue: 89.90,
-            category: 'garrafas',
+            category: 'garrafa',
             rating: 4.8,
             reviews: 124,
             eco: true
@@ -322,7 +322,7 @@ function adicionarAoCarrinho(id) {
             description: "100% algodão orgânico, resistente e durável",
             price: "R$ 34,90",
             priceValue: 34.90,
-            category: 'sacolas',
+            category: 'sacola',
             rating: 4.9,
             reviews: 89,
             eco: true
@@ -333,7 +333,7 @@ function adicionarAoCarrinho(id) {
             description: "Produtos biodegradáveis sem químicos nocivos",
             price: "R$ 124,90",
             priceValue: 124.90,
-            category: 'limpeza',
+            category: 'kit',
             rating: 4.7,
             reviews: 156,
             eco: true
@@ -366,7 +366,7 @@ function adicionarAoCarrinho(id) {
             description: "Camiseta de algodão orgânico certificado",
             price: "R$ 69,90",
             priceValue: 69.90,
-            category: 'roupas',
+            category: 'roupa',
             rating: 4.8,
             reviews: 91,
             eco: true
@@ -384,12 +384,24 @@ function adicionarAoCarrinho(id) {
     if (itemExistente) {
         itemExistente.quantidade++;
     } else {
+        // Mapear categoria para nome de arquivo correto
+        const imagemMap = {
+            'garrafa': 'garrafa.png',
+            'sacola': 'sacola.png',
+            'kit': 'kit.png',
+            'cosmeticos': 'cosmeticos.png',
+            'utensilios': 'utensilios.png',
+            'roupa': 'roupa.png'
+        };
+        
+        const nomeArquivo = imagemMap[produto.category] || 'sem-imagem.png';
+        
         carrinho.push({
             id: produto.id,
             nome: produto.name,
             descricao: produto.description,
             preco: produto.priceValue,
-            imagem: `../../src/img/${produto.category}.png`,
+            imagem: `../../src/img/${nomeArquivo}`,
             quantidade: 1
         });
     }
