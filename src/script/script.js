@@ -144,7 +144,7 @@ function renderProducts(products) {
                 
                 <div class="product-price-container">
                     <span class="product-price">${product.price}</span>
-                    <button class="buy-btn">
+                    <button class="buy-btn" onclick="adicionarAoCarrinho(${product.id})">
                         <svg viewBox="0 0 24 24" width="16" height="16">
                             <path fill="currentColor" d="M7 22q-.825 0-1.413-.588T5 20q0-.825.588-1.413T7 18q.825 0 1.413.588T9 20q0 .825-.588 1.413T7 22Zm10 0q-.825 0-1.413-.588T15 20q0-.825.588-1.413T17 18q.825 0 1.413.588T19 20q0 .825-.588 1.413T17 22ZM6.15 6l2.4 5h7l2.75-5H6.15ZM5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.738.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.988t-.05-1.962L6.6 11.6L3 4H1V2h3.25l.95 2Zm3.35 7h7h-7Z"/>
                         </svg>
@@ -217,3 +217,31 @@ document.addEventListener('DOMContentLoaded', function() {
     priceFilter.addEventListener('change', filterProducts);
 });
 
+// Adicionar esta função ao script.js existente
+function adicionarAoCarrinho(id) {
+    const produto = allProducts.find(p => p.id === id);
+    if (!produto) return;
+    
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+    // Verificar se o produto já está no carrinho
+    const itemExistente = carrinho.find(item => item.id === id);
+    
+    if (itemExistente) {
+        itemExistente.quantidade++;
+    } else {
+        carrinho.push({
+            id: produto.id,
+            nome: produto.name,
+            descricao: produto.description,
+            preco: produto.priceValue,
+            imagem: `../../src/img/${produto.category}.png`,
+            quantidade: 1
+        });
+    }
+    
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    
+    // Feedback visual
+    alert(`${produto.name} adicionado ao carrinho!`);
+}
