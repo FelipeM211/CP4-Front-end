@@ -270,3 +270,64 @@ body {
   max-height: 800px;
   object-fit: cover;
 }
+
+
+/* Estilo geral do formulário */
+.form-ctt {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 128, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Labels */
+.form-ctt label {
+  color: #006400;
+  font-weight: 600;
+}
+
+/* Inputs, selects e textareas */
+.form-ctt .form-control {
+  border: 2px solid #c8e6c9;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Foco nos inputs */
+.form-ctt .form-control:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+
+/* Checkbox */
+.form-ctt .form-check-input {
+  accent-color: #2e7d32;
+}
+
+/* Botão */
+.form-ctt .btn-primary {
+  background-color: #2e7d32;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.form-ctt .btn-primary:hover {
+  background-color: #1b5e20;
+}
+
+/* Placeholder text */
+.form-ctt ::placeholder {
+  color: #a5d6a7;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .form-ctt {
+    padding: 20px;
+  }
+}
