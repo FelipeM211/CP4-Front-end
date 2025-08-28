@@ -217,3 +217,4 @@ document.addEventListener('DOMContentLoaded', function() {
     priceFilter.addEventListener('change', filterProducts);
 });
 
+
