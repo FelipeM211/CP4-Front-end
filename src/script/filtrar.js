@@ -1,16 +1,12 @@
-// filtros-produtos.js - Filtros para a página de produtos
 document.addEventListener('DOMContentLoaded', function() {
-    // Elementos do DOM
     const searchInput = document.getElementById('search-input');
     const categoryFilter = document.getElementById('category-filter');
     const priceFilter = document.getElementById('price-filter');
     const resultsText = document.getElementById('results-text');
     const productCards = document.querySelectorAll('.produto-card');
     
-    // Número total de produtos
     const totalProducts = productCards.length;
     
-    // Função para filtrar produtos
     function filterProducts() {
         const searchTerm = searchInput.value.toLowerCase();
         const selectedCategory = categoryFilter.value;
@@ -65,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         resultsText.textContent = `Mostrando ${visibleCount} de ${totalProducts} produtos`;
     }
     
-    // Adicionar event listeners aos filtros
     if (searchInput) searchInput.addEventListener('input', filterProducts);
     if (categoryFilter) categoryFilter.addEventListener('change', filterProducts);
     if (priceFilter) priceFilter.addEventListener('change', filterProducts);
