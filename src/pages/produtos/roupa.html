@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="../../src/img/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../style.css">
+    <title>Camisa Sustentável - EcoSustenta</title>
+
 </head>
 <body>
     <header class="cabecalho">
@@ -24,10 +25,10 @@
                 <div class="collapse navbar-collapse" id="navegacaoPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link" href="../../../index.html">Início</a>
+                            <a class="nav-link navegacao-link" href="../../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link  ativo" href="../produtos.html">Produtos</a>
+                            <a class="nav-link navegacao-link ativo" href="../produtos.html">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navegacao-link" href="../sobre.html">Sobre Nós</a>
@@ -46,9 +47,428 @@
             </div>
         </nav>
     </header>
-    
-</body>
-<footer class="rodape bg-dark text-white py-5">
+
+    <main class="container my-5">
+        <!-- Navegação breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
+                <li class="breadcrumb-item"><a href="../produtos.html#moda">Moda Sustentável</a></li>
+                <li class="breadcrumb-item active">Camisa Sustentável</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <!-- Galeria de imagens do produto -->
+            <div class="col-md-6">
+                <div class="product-gallery">
+                    <img id="main-image" src="../../img/roupa.png" class="img-fluid rounded" alt="Camisa Sustentável">
+                </div>
+            </div>
+
+            <!-- Informações do produto -->
+            <div class="col-md-6 product-info">
+                <div class="eco-badge">
+                    <i class="bi bi-tree-fill me-1"></i> Moda Sustentável
+                </div>
+                <h1>Camisa Sustentável</h1>
+                <div class="rating mb-2">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <span class="ms-2">(92 avaliações)</span>
+                </div>
+                
+                <p class="product-price">R$ 89,90</p>
+                
+                <p>Nossa camisa sustentável é confeccionada com algodão orgânico e fibras naturais, oferecendo conforto, durabilidade e estilo consciente. Perfeita para o dia a dia, é uma peça versátil que combina com qualquer look.</p>
+                
+
+                
+                <div class="product-features">
+                    <h5>Características:</h5>
+                    <ul class="list-unstyled">
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 85% Algodão orgânico certificado</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 10% Fibra de bambu</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 5% Poliéster reciclado</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Corantes naturais e atóxicos</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Produção ética e sustentável</li>
+                    </ul>
+                </div>
+
+                <div class="product-benefits mt-4">
+                    <h5>Vantagens:</h5>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div>Economiza 2.700 litros de água em comparação com camisetas convencionais</div>
+                    </div>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <div>Algodão cultivado sem agrotóxicos ou pesticidas</div>
+                    </div>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <div>Material biodegradável e reciclável</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-2" for="quantity">Quantidade:</label>
+                    <select class="form-select quantity-selector" id="quantity">
+                        <option value="1">1 unidade</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                        <option value="4">4 unidades</option>
+                        <option value="5">5 unidades</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-success btn-lg me-md-2" onclick="adicionarAoCarrinho(6, document.getElementById('quantity').value)">
+                        <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                    <button class="btn btn-outline-success btn-lg">
+                        <i class="bi bi-heart"></i> Favoritar
+                    </button>
+                </div>
+                
+                <div class="mt-4">
+                    <p><i class="bi bi-truck me-2"></i> Frete grátis para todo o Brasil</p>
+                    <p><i class="bi bi-arrow-repeat me-2"></i> Trocas gratuitas em 30 dias</p>
+                    <p><i class="bi bi-tree me-2"></i> Cada compra ajuda a plantar 1 árvore</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição detalhada e especificações -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descrição</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">Especificações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Avaliações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="impact-tab" data-bs-toggle="tab" data-bs-target="#impact" type="button" role="tab">Impacto Ambiental</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4>Estilo consciente para o seu dia a dia</h4>
+                        <p>Nossa Camisa Sustentável foi cuidadosamente desenvolvida para quem busca peças de vestuário que unem estilo, conforto e responsabilidade ambiental. Confeccionada com materiais de origem sustentável e processos de produção éticos, esta camisa é um exemplo de como a moda pode ser transformadora.</p>
+                        
+                        <h5>Conforto e qualidade:</h5>
+                        <p>Com toque suave e respirabilidade superior, nossa camisa é ideal para uso no dia a dia, trabalho ou momentos de lazer. A combinação de algodão orgânico com fibra de bambu oferece conforto térmico, maciez e durabilidade excepcionais.</p>
+                        
+                        <h5>Design atemporal:</h5>
+                        <p>Cortada no caimento regular, nossa camisa possui modelagem que valoriza todos os biotipos. Com gola clássica e mangas com barra, é uma peça versátil que pode ser usada sozinha ou como parte de produções mais elaboradas.</p>
+                        
+                        <h5>Produção responsável:</h5>
+                        <p>Nossa camisa é produzida em fábricas que seguem rigorosos padrões de comércio justo, garantindo condições dignas de trabalho e remuneração adequada para todos os envolvidos na cadeia produtiva.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="specs" role="tabpanel">
+                        <div class="fabric-composition">
+                            <h5>Composição do Tecido:</h5>
+                            <div class="d-flex justify-content-between">
+                                <span>Algodão Orgânico</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="composition-bar">
+                                <div class="composition-fill cotton-fill"></div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between">
+                                <span>Fibra de Bambu</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="composition-bar">
+                                <div class="composition-fill bamboo-fill"></div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between">
+                                <span>Poliéster Reciclado</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="composition-bar">
+                                <div class="composition-fill recycled-fill"></div>
+                            </div>
+                        </div>
+                        
+                        <table class="table mt-4">
+                            <tr>
+                                <th>Modelagem</th>
+                                <td>Regular Fit (caimento tradicional)</td>
+                            </tr>
+                            <tr>
+                                <th>Gola</th>
+                                <td>Gola clássica</td>
+                            </tr>
+                            <tr>
+                                <th>Comprimento</th>
+                                <td>Padrão (cobre até a cintura)</td>
+                            </tr>
+                            <tr>
+                                <th>Lavagem</th>
+                                <td>Lavar à mão ou na máquina com água fria</td>
+                            </tr>
+                            <tr>
+                                <th>Secagem</th>
+                                <td>Secar à sombra, não usar secadora</td>
+                            </tr>
+                            <tr>
+                                <th>Origem</th>
+                                <td>Produzido no Brasil com materiais certificados</td>
+                            </tr>
+                            <tr>
+                                <th>Certificações</th>
+                                <td>GOTS (Global Organic Textile Standard), Fair Trade</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="me-3">
+                                <h2 class="mb-0">4.3</h2>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                                <p class="text-muted mb-0">Baseado em 92 avaliações</p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#reviewModal">Deixar avaliação</button>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top pt-3">
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">CR</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Carla Rodrigues</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Comprei duas e amei! O tecido é super macio e confortável. Perfeita para o calor e com a consciência tranquila por ser sustentável.</p>
+                                    <small class="text-muted">Postado em 22 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">PS</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Pedro Silva</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <p class="mb-1">Gostei muito da camisa, mas acho que poderia ter um caimento um pouco mais moderno. A qualidade do tecido é excelente.</p>
+                                    <small class="text-muted">Postado em 15 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">AM</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Ana Mendes</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Perfeita! Comprei na cor natural e é linda. Já lavou várias vezes e mantém a cor e o formato. Ótimo custo-benefício!</p>
+                                    <small class="text-muted">Postado em 8 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="impact" role="tabpanel">
+                        <h4>Seu impacto positivo ao escolher esta camisa</h4>
+                        <p>Ao optar por nossa Camisa Sustentável, você está contribuindo para uma cadeia de moda mais justa e ambientalmente responsável. Veja como sua escolha faz a diferença:</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-droplet-fill text-primary me-2"></i> Economia de água</h5>
+                                        <p>O cultivo de algodão orgânico consome até 91% menos água que o algodão convencional. Cada camisa economiza aproximadamente 2.700 litros de água.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-flower1 text-success me-2"></i> Agricultura sem agrotóxicos</h5>
+                                        <p>Evitamos o uso de pesticidas sintéticos que contaminam o solo e os lençóis freáticos, protegendo a biodiversidade e a saúde dos agricultores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-people-fill text-info me-2"></i> Comércio justo</h5>
+                                        <p>Garantimos condições dignas de trabalho e remuneração adequada para todos os envolvidos na produção, da plantação do algodão à confecção.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-recycle text-warning me-2"></i> Redução de resíduos</h5>
+                                        <p>Nossas embalagens são minimalistas e recicláveis, e o produto final é biodegradável, reduzindo significativamente o impacto no fim de sua vida útil.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-success mt-4">
+                            <h5><i class="bi bi-tree-fill me-2"></i> Compromisso com o reflorestamento</h5>
+                            <p class="mb-0">A cada camisa vendida, nós plantamos uma árvore nativa em áreas de reflorestamento no Brasil. Até agora, já plantamos mais de 25.000 árvores graças a clientes conscientes como você!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos relacionados -->
+        <div class="related-products">
+            <h3 class="mb-4">Produtos Relacionados</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/calca.jpg" class="card-img-top" alt="Calça Sustentável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Calça Jeans Sustentável</h5>
+                            <p class="card-text">Jeans produzido com técnicas de baixo impacto ambiental.</p>
+                            <p class="fw-bold text-success">R$ 149,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/vestido.jpg" class="card-img-top" alt="Vestido Sustentável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vestido de Algodão Orgânico</h5>
+                            <p class="card-text">Vestido leve e confortável para o verão.</p>
+                            <p class="fw-bold text-success">R$ 129,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/bolsa.jpg" class="card-img-top" alt="Bolsa Sustentável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bolsa de Tecido Reciclado</h5>
+                            <p class="card-text">Bolsa produzida a partir de garrafas PET recicladas.</p>
+                            <p class="fw-bold text-success">R$ 79,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para avaliação -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Avaliar Produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Avaliação</label>
+                            <div class="rating-input">
+                                <i class="bi bi-star fs-3 me-1" data-value="1"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="2"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="3"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="4"></i>
+                                <i class="bi bi-star fs-3" data-value="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Título da avaliação</label>
+                            <input type="text" class="form-control" id="reviewTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Sua avaliação</label>
+                            <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Cor escolhida</label>
+                            <select class="form-control">
+                                <option>Branco</option>
+                                <option>Natural</option>
+                                <option>Verde</option>
+                                <option>Azul</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tamanho escolhido</label>
+                            <select class="form-control">
+                                <option>P</option>
+                                <option>M</option>
+                                <option>G</option>
+                                <option>GG</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
@@ -65,10 +485,10 @@
                 <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
                     <h5 class="mb-3">Links Úteis</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Início</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Produtos</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Contato</a></li>
+                        <li><a href="../../index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li><a href="../produtos.html" class="text-white-50 text-decoration-none">Produtos</a></li>
+                        <li><a href="../sobre.html" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="../contato.html" class="text-white-50 text-decoration-none">Contato</a></li>
                     </ul>
                 </div>
                 
@@ -98,4 +518,7 @@
             </div>
         </div>
     </footer>
-</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script/script.js"></script>
+    <script src="../../script/carrinho.js"></script>

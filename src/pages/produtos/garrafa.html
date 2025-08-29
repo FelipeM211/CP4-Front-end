@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="../../src/img/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Garrafa Reutilizável Premium - EcoSustenta</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -27,7 +28,7 @@
                             <a class="nav-link navegacao-link" href="../../../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link  ativo" href="../produtos.html">Produtos</a>
+                            <a class="nav-link navegacao-link ativo" href="../produtos.html">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navegacao-link" href="../sobre.html">Sobre Nós</a>
@@ -46,56 +47,330 @@
             </div>
         </nav>
     </header>
-    
-</body>
-<footer class="rodape bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="mb-3"><i class="bi bi-tree-fill"></i> EcoSustenta</h5>
-                    <p>Produtos sustentáveis para um futuro melhor. Juntos construindo um mundo mais verde.</p>
-                    <div class="redes-sociais">
-                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+
+    <main class="container my-5">
+        <!-- Navegação breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../../index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
+                <li class="breadcrumb-item active">Garrafa Reutilizável Premium</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <!-- Galeria de imagens do produto -->
+            <div class="col-md-6">
+                <div class="product-gallery">
+                    <img id="main-image" src="../../img/garrafa.png" class="img-fluid rounded" alt="Garrafa Reutilizável Premium">
+                </div>
+            </div>
+
+            <!-- Informações do produto -->
+            <div class="col-md-6 product-info">
+                <h1>Garrafa Reutilizável Premium</h1>
+                <div class="rating mb-2">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <span class="ms-2">(124 avaliações)</span>
+                </div>
+                
+                <p class="product-price">R$ 89,90</p>
+                
+                <p>Garrafa de aço inoxidável de alta qualidade que mantém a temperatura de suas bebidas por até 24 horas. Perfeita para seu dia a dia, workouts ou para levar ao trabalho. Livre de BPA e outros químicos nocivos.</p>
+                
+                <div class="product-features">
+                    <h5>Características:</h5>
+                    <ul class="list-unstyled">
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Mantém líquidos quentes por 12 horas e frios por 24 horas</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Material: Aço inoxidável 18/8 livre de BPA</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Capacidade: 500ml</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Tampa antivazamento com rosca</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Reutilizável e reciclável</li>
+                    </ul>
+                </div>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-2" for="quantity">Quantidade:</label>
+                    <select class="form-select quantity-selector" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-success btn-lg me-md-2" onclick="adicionarAoCarrinho(1, document.getElementById('quantity').value)">
+                        <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                    <button class="btn btn-outline-success btn-lg">
+                        <i class="bi bi-heart"></i> Favoritar
+                    </button>
+                </div>
+                
+                <div class="mt-4">
+                    <p><i class="bi bi-truck me-2"></i> Frete grátis para todo o Brasil</p>
+                    <p><i class="bi bi-arrow-repeat me-2"></i> Devolução garantida em 30 dias</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição detalhada e especificações -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descrição</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">Especificações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Avaliações</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4>Sua companheira perfeita para todos os momentos</h4>
+                        <p>Nossa Garrafa Reutilizável Premium foi desenvolvida para quem busca praticidade e consciência ambiental no dia a dia. Feita com aço inoxidável de alta qualidade, ela mantém a temperatura ideal de suas bebidas por longas horas.</p>
+                        
+                        <h5>Benefícios ambientais:</h5>
+                        <p>Ao escolher nossa garrafa reutilizável, você está contribuindo para a redução do consumo de plástico descartável. Estima-se que cada garrafa reutilizável pode substituir até 156 garrafas plásticas por ano.</p>
+                        
+                        <h5>Design e funcionalidade:</h5>
+                        <p>Com design elegante e moderno, nossa garrafa possui tampa com rosca que garante perfeita vedação, evitando vazamentos. Seu formato foi pensado para melhor adaptação às mãos e às bolsas laterais de mochilas.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="specs" role="tabpanel">
+                        <table class="table">
+                            <tr>
+                                <th>Material</th>
+                                <td>Aço inoxidável 18/8 grau alimentício</td>
+                            </tr>
+                            <tr>
+                                <th>Capacidade</th>
+                                <td>500ml</td>
+                            </tr>
+                            <tr>
+                                <th>Dimensões</th>
+                                <td>8cm de diâmetro x 22cm de altura</td>
+                            </tr>
+                            <tr>
+                                <th>Peso</th>
+                                <td>380g</td>
+                            </tr>
+                            <tr>
+                                <th>Isolamento térmico</th>
+                                <td>Mantém calor por 12h e frio por 24h</td>
+                            </tr>
+                            <tr>
+                                <th>Garantia</th>
+                                <td>2 anos contra defeitos de fabricação</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="me-3">
+                                <h2 class="mb-0">4.5</h2>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="text-muted mb-0">Baseado em 48 avaliações</p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#reviewModal">Deixar avaliação</button>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top pt-3">
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">MC</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Maria Clara</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Excelente produto! Mantém realmente a temperatura como anunciado. Uso todos os dias no trabalho.</p>
+                                    <small class="text-muted">Postado em 12 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">JP</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">João Pedro</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <p class="mb-1">Boa garrafa, mas a tampa é um pouco difícil de abrir no início. Depois que "amaciou" ficou melhor.</p>
+                                    <small class="text-muted">Postado em 5 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos relacionados -->
+        <div class="related-products">
+            <h3 class="mb-4">Produtos Relacionados</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/sacola.png" class="card-img-top" alt="Sacola Ecológica">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sacola Ecológica de Algodão</h5>
+                            <p class="card-text">100% algodão orgânico, resistente e durável.</p>
+                            <p class="fw-bold text-success">R$ 34,90</p>
+                            <a href="sacola.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/kit.png" class="card-img-top" alt="Kit Limpeza Natural">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kit Produtos de Limpeza Natural</h5>
+                            <p class="card-text">Produtos biodegradáveis sem químicos nocivos.</p>
+                            <p class="fw-bold text-success">R$ 124,90</p>
+                            <a href="limpeza.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/roupa.png" class="card-img-top" alt="Canudos de Inox">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Roupa Sustentável</h5>
+                            <p class="card-text">Camiseta de algodão orgânico certificado. Confortável e ecologicamente correta.</p>
+                            <p class="fw-bold text-success">R$ 69,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para avaliação -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Avaliar Produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Avaliação</label>
+                            <div class="rating-input">
+                                <i class="bi bi-star fs-3 me-1" data-value="1"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="2"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="3"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="4"></i>
+                                <i class="bi bi-star fs-3" data-value="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Título da avaliação</label>
+                            <input type="text" class="form-control" id="reviewTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Sua avaliação</label>
+                            <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="mb-3"><i class="bi bi-tree-fill"></i> EcoSustenta</h5>
+                        <p>Produtos sustentáveis para um futuro melhor. Juntos construindo um mundo mais verde.</p>
+                        <div class="redes-sociais">
+                            <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                        <h5 class="mb-3">Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                            <li><a href="src/pages/produtos.html" class="text-white-50 text-decoration-none">Produtos</a></li>
+                            <li><a href="src/pages/sobre.html" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
+                            <li><a href="src/pages/contato.html" class="text-white-50 text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                        <h5 class="mb-3">Políticas</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Trocas e Devoluções</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3">
+                        <h5 class="mb-3">Contato</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope me-2"></i> contato@ecosustenta.com.br</li>
+                            <li><i class="bi bi-telephone me-2"></i> (11) 9999-8888</li>
+                            <li><i class="bi bi-geo-alt me-2"></i> São Paulo, SP - Brasil</li>
+                        </ul>
                     </div>
                 </div>
                 
-                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
-                    <h5 class="mb-3">Links Úteis</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Início</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Produtos</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Contato</a></li>
-                    </ul>
-                </div>
+                <hr class="my-4 bg-secondary">
                 
-                <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
-                    <h5 class="mb-3">Políticas</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Trocas e Devoluções</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-4 col-lg-3">
-                    <h5 class="mb-3">Contato</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-envelope me-2"></i> contato@ecosustenta.com.br</li>
-                        <li><i class="bi bi-telephone me-2"></i> (11) 9999-8888</li>
-                        <li><i class="bi bi-geo-alt me-2"></i> São Paulo, SP - Brasil</li>
-                    </ul>
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2023 EcoSustenta. Todos os direitos reservados.</p>
                 </div>
             </div>
-            
-            <hr class="my-4 bg-secondary">
-            
-            <div class="text-center">
-                <p class="mb-0">&copy; 2023 EcoSustenta. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script/script.js"> </script>
+    <script src="../../script/carrinho.js"></script>
+</body>
 </html>

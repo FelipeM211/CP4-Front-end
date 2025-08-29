@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="../../src/img/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Kit Produtos de Limpeza Natural - EcoSustenta</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -24,10 +25,10 @@
                 <div class="collapse navbar-collapse" id="navegacaoPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link" href="../../../index.html">Início</a>
+                            <a class="nav-link navegacao-link" href="../../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link  ativo" href="../produtos.html">Produtos</a>
+                            <a class="nav-link navegacao-link ativo" href="../produtos.html">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navegacao-link" href="../sobre.html">Sobre Nós</a>
@@ -46,9 +47,451 @@
             </div>
         </nav>
     </header>
-    
-</body>
-<footer class="rodape bg-dark text-white py-5">
+
+    <main class="container my-5">
+        <!-- Navegação breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
+                <li class="breadcrumb-item active">Kit Limpeza Natural</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <!-- Galeria de imagens do produto -->
+            <div class="col-md-6">
+                <div class="product-gallery">
+                    <img id="main-image" src="../../img/kit.png" class="img-fluid rounded" alt="Kit Produtos de Limpeza Natural">
+                </div>
+            </div>
+
+            <!-- Informações do produto -->
+            <div class="col-md-6 product-info">
+                <div class="eco-badge">
+                    <i class="bi bi-tree-fill me-1"></i> 100% Natural e Biodegradável
+                </div>
+                <h1>Kit Produtos de Limpeza Natural</h1>
+                <div class="rating mb-2">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <span class="ms-2">(143 avaliações)</span>
+                </div>
+                
+                <p class="product-price">R$ 124,90</p>
+                
+                <p>Nosso kit de limpeza natural oferece uma alternativa eficiente e ecológica para manter sua casa limpa sem agredir o meio ambiente. Formulado com ingredientes naturais e biodegradáveis, é seguro para sua família, pets e para o planeta.</p>
+                
+                <div class="product-features">
+                    <h5>Conteúdo do Kit:</h5>
+                    <ul class="list-unstyled">
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Detergente Multiuso (500ml)</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Limpador para Vidros (500ml)</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Desinfetante Natural (500ml)</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Sabão Líquido para Roupas (1L)</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Esponja de Fibra Natural</li>
+                    </ul>
+                </div>
+
+                <div class="product-benefits mt-4">
+                    <h5>Benefícios:</h5>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div>Biodegradável em 28 dias</div>
+                    </div>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <div>Ingredientes 100% naturais e veganos</div>
+                    </div>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-x-circle"></i>
+                        </div>
+                        <div>Livre de toxinas, fosfatos e corantes artificiais</div>
+                    </div>
+                    <div class="product-benefit">
+                        <div class="benefit-icon">
+                            <i class="bi bi-recycle"></i>
+                        </div>
+                        <div>Embalagens recicláveis e refiláveis</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-2" for="quantity">Quantidade:</label>
+                    <select class="form-select quantity-selector" id="quantity">
+                        <option value="1">1 kit</option>
+                        <option value="2">2 kits</option>
+                        <option value="3">3 kits</option>
+                        <option value="4">4 kits</option>
+                        <option value="5">5 kits</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-success btn-lg me-md-2" onclick="adicionarAoCarrinho(3, document.getElementById('quantity').value)">
+                        <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                    <button class="btn btn-outline-success btn-lg">
+                        <i class="bi bi-heart"></i> Favoritar
+                    </button>
+                </div>
+                
+                <div class="mt-4">
+                    <p><i class="bi bi-truck me-2"></i> Frete grátis para todo o Brasil</p>
+                    <p><i class="bi bi-arrow-repeat me-2"></i> Devolução garantida em 30 dias</p>
+                    <p><i class="bi bi-tree me-2"></i> Embalagem feita com plástico reciclado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição detalhada e especificações -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descrição</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients" type="button" role="tab">Ingredientes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Avaliações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="usage-tab" data-bs-toggle="tab" data-bs-target="#usage" type="button" role="tab">Como Usar</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4>Limpeza eficiente com consciência ecológica</h4>
+                        <p>Nosso Kit de Produtos de Limpeza Natural foi desenvolvido para quem busca um lar limpo e saudável sem comprometer o meio ambiente. Cada produto foi formulado com cuidado para oferecer máxima eficiência com mínimo impacto ambiental.</p>
+                        
+                        <h5>Por que escolher limpeza natural?</h5>
+                        <p>Produtos de limpeza convencionais contêm químicos agressivos que podem causar alergias, irritações e poluir a água. Nossas fórmulas naturais são seguras para crianças, pets e pessoas com sensibilidade, enquanto protegem os ecossistemas aquáticos.</p>
+                        
+                        <h5>Eficácia comprovada:</h5>
+                        <p>Nossos produtos foram testados e aprovados em laboratório, demonstrando eficácia comparável aos produtos convencionais na remoção de gordura, bactérias e sujeira. A combinação de ingredientes naturais como óleos essenciais, vinagre e bicarbonato oferece poder de limpeza surpreendente.</p>
+                        
+                        <h5>Compromisso com a sustentabilidade:</h5>
+                        <p>Além dos ingredientes naturais, nossas embalagens são feitas com plástico 100% reciclado e são recicláveis. Oferecemos serviço de refil para reduzir ainda mais o desperdício.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="ingredients" role="tabpanel">
+                        <h4>Ingredientes naturais e seguros</h4>
+                        <p>Todos os nossos produtos são formulados com ingredientes de origem natural, biodegradáveis e seguros para o meio ambiente.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Detergente Multiuso</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="ingredient-list">
+                                            <li>Extrato de alecrim (antibacteriano natural)</li>
+                                            <li>Óleo essencial de limão (desengordurante)</li>
+                                            <li>Bicarbonato de sódio (abrasivo suave)</li>
+                                            <li>Sabão de coco biodegradável</li>
+                                            <li>Água purificada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Limpador para Vidros</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="ingredient-list">
+                                            <li>Vinagre branco destilado</li>
+                                            <li>Álcool de cereais</li>
+                                            <li>Óleo essencial de lavanda</li>
+                                            <li>Água destilada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Desinfetante Natural</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="ingredient-list">
+                                            <li>Óleo essencial de tea tree (antisséptico)</li>
+                                            <li>Óleo essencial de eucalipto</li>
+                                            <li>Extrato de grapefruit</li>
+                                            <li>Álcool vegetal</li>
+                                            <li>Água purificada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">Sabão Líquido para Roupas</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="ingredient-list">
+                                            <li>Sabão de coco biodegradável</li>
+                                            <li>Bicarbonato de sódio (clareador natural)</li>
+                                            <li>Óleo essencial de lavanda</li>
+                                            <li>Glicerina vegetal</li>
+                                            <li>Extrato de alecrim</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h5><i class="bi bi-info-circle me-2"></i> Importante</h5>
+                            <p class="mb-0">Todos os nossos produtos são livres de: parabenos, fosfatos, ftalatos, triclosan, cloro, amônia, corantes artificiais e fragrâncias sintéticas. São veganos e não testados em animais.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="me-3">
+                                <h2 class="mb-0">4.6</h2>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="text-muted mb-0">Baseado em 143 avaliações</p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#reviewModal">Deixar avaliação</button>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top pt-3">
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">MC</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Marina Costa</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Minha filha tem alergia e desde que troquei para esses produtos, não teve mais crises. E o cheiro é maravilhoso! A casa fica com aroma natural e fresco.</p>
+                                    <small class="text-muted">Postado em 20 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">RS</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Ricardo Silva</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <p class="mb-1">Gostei muito dos produtos, mas o desinfetante poderia ter um aroma mais forte. A eficácia é boa, mas sinto falta daquele cheiro de "limpeza".</p>
+                                    <small class="text-muted">Postado em 15 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">AC</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Ana Carvalho</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Comprei para meu apartamento e amei! O multiuso remove até gordura pesada da cozinha. Já indiquei para todas as minhas amigas!</p>
+                                    <small class="text-muted">Postado em 8 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="usage" role="tabpanel">
+                        <h4>Como usar nossos produtos</h4>
+                        <p>Para obter os melhores resultados com nossos produtos de limpeza natural, seguem algumas recomendações de uso:</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="bi bi-droplet me-2"></i> Detergente Multiuso</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Diluir 2 tampas em 1 litro de água para limpeza geral. Use puro para áreas com gordura acumulada. Deixe agir por 5 minutos antes de enxaguar.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="bi bi-circle me-2"></i> Limpador para Vidros</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Agitar antes de usar. Aplicar em superfícies de vidro com pano macio ou papel jornal. Não necessita enxágue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="bi bi-shield me-2"></i> Desinfetante Natural</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Usar puro em superfícies que necessitam desinfecção. Deixe agir por 10 minutos para ação antimicrobiana completa.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card border-0">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="bi bi-water me-2"></i> Sabão Líquido para Roupas</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Use 2 tampas para lavagens normais (5-6kg). Para roupas muito sujas, deixe de molho por 30 minutos antes de lavar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-warning mt-4">
+                            <h5><i class="bi bi-exclamation-triangle me-2"></i> Dicas importantes</h5>
+                            <ul class="mb-0">
+                                <li>Mantenha fora do alcance de crianças</li>
+                                <li>Evite contato com os olhos</li>
+                                <li>Guarde em local fresco e arejado</li>
+                                <li>Agite bem antes de usar</li>
+                                <li>Use dentro de 6 meses após abertura</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos relacionados -->
+        <div class="related-products">
+            <h3 class="mb-4">Produtos Relacionados</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/garrafa.png" class="card-img-top" alt="Garrafa Reutilizável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Garrafa Reutilizável Premium</h5>
+                            <p class="card-text">Garrafa de aço inoxidável, mantém temperatura por 24h.</p>
+                            <p class="fw-bold text-success">R$ 89,90</p>
+                            <a href="garrafa.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/sacola.png" class="card-img-top" alt="Sacola Ecológica">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sacola Ecológica de Algodão</h5>
+                            <p class="card-text">100% algodão orgânico, resistente e durável.</p>
+                            <p class="fw-bold text-success">R$ 34,90</p>
+                            <a href="sacola.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/refil.jpg" class="card-img-top" alt="Refil de Limpeza">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Refil para Produtos de Limpeza</h5>
+                            <p class="card-text">Refil econômico e sustentável para seu kit de limpeza.</p>
+                            <p class="fw-bold text-success">R$ 79,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para avaliação -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Avaliar Produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Avaliação</label>
+                            <div class="rating-input">
+                                <i class="bi bi-star fs-3 me-1" data-value="1"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="2"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="3"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="4"></i>
+                                <i class="bi bi-star fs-3" data-value="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Título da avaliação</label>
+                            <input type="text" class="form-control" id="reviewTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Sua avaliação</label>
+                            <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Qual produto você mais gostou?</label>
+                            <select class="form-control">
+                                <option>Detergente Multiuso</option>
+                                <option>Limpador para Vidros</option>
+                                <option>Desinfetante Natural</option>
+                                <option>Sabão Líquido para Roupas</option>
+                                <option>Todos igualmente</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
@@ -65,10 +508,10 @@
                 <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
                     <h5 class="mb-3">Links Úteis</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Início</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Produtos</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Contato</a></li>
+                        <li><a href="../../index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li><a href="../produtos.html" class="text-white-50 text-decoration-none">Produtos</a></li>
+                        <li><a href="../sobre.html" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="../contato.html" class="text-white-50 text-decoration-none">Contato</a></li>
                     </ul>
                 </div>
                 
@@ -98,4 +541,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script/script.js"></script>
+    <script src="../../script/carrinho.js"></script>
+</body>
 </html>

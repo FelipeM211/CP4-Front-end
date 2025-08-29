@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="../../src/img/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="../../../index.html" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../style.css">
+    <title>Utensílios Biodegradáveis - EcoSustenta</title>
 </head>
 <body>
     <header class="cabecalho">
@@ -24,10 +24,10 @@
                 <div class="collapse navbar-collapse" id="navegacaoPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link" href="../../../index.html">Início</a>
+                            <a class="nav-link navegacao-link" href="../../index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navegacao-link  ativo" href="../produtos.html">Produtos</a>
+                            <a class="nav-link navegacao-link ativo" href="../produtos.html">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link navegacao-link" href="../sobre.html">Sobre Nós</a>
@@ -46,9 +46,382 @@
             </div>
         </nav>
     </header>
-    
-</body>
-<footer class="rodape bg-dark text-white py-5">
+
+    <main class="container my-5">
+        <!-- Navegação breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
+                <li class="breadcrumb-item active">Utensílios Biodegradáveis</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <!-- Galeria de imagens do produto -->
+            <div class="col-md-6">
+                <div class="product-gallery">
+                    <img id="main-image" src="../../img/utensilios.png" class="img-fluid rounded" alt="Kit Utensílios Biodegradáveis">
+                </div>
+            </div>
+
+            <!-- Informações do produto -->
+            <div class="col-md-6 product-info">
+                <div class="eco-badge">
+                    <i class="bi bi-tree-fill me-1"></i> 100% Biodegradável
+                </div>
+                <h1>Kit Utensílios Biodegradáveis</h1>
+                <div class="rating mb-2">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <span class="ms-2">(67 avaliações)</span>
+                </div>
+                
+                <p class="product-price">R$ 24,90</p>
+                
+                <p>Nosso kit de utensílios biodegradáveis é a solução perfeita para suas refeições, sem gerar lixo plástico. Feitos com materiais naturais e compostáveis, são resistentes e ideais para picnics, festas ou uso no dia a dia.</p>
+                
+                <div class="product-features">
+                    <h5>Conteúdo do Kit:</h5>
+                    <ul class="list-unstyled">
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 10 colheres</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 10 garfos</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 10 facas</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> 10 canudos</li>
+                        <li class="feature-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Embalagem compostável</li>
+                    </ul>
+                </div>
+
+                <div class="product-features">
+                    <h5>Composição Sustentável:</h5>
+                    <div class="composition-item">
+                        <div class="composition-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div>Fécula de mandioca - Biodegradável em 90 dias</div>
+                    </div>
+                    <div class="composition-item">
+                        <div class="composition-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+                        <div>Fibra de bambu - Recurso renovável de rápido crescimento</div>
+                    </div>
+                    <div class="composition-item">
+                        <div class="composition-icon">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <div>Amido de milho - Compostável e não tóxico</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-2" for="quantity">Quantidade:</label>
+                    <select class="form-select quantity-selector" id="quantity">
+                        <option value="1">1 kit</option>
+                        <option value="2">2 kits</option>
+                        <option value="3">3 kits</option>
+                        <option value="4">4 kits</option>
+                        <option value="5">5 kits</option>
+                    </select>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-success btn-lg me-md-2" onclick="adicionarAoCarrinho(5, document.getElementById('quantity').value)">
+                        <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                    <button class="btn btn-outline-success btn-lg">
+                        <i class="bi bi-heart"></i> Favoritar
+                    </button>
+                </div>
+                
+                <div class="mt-4">
+                    <p><i class="bi bi-truck me-2"></i> Frete grátis para compras acima de R$ 99</p>
+                    <p><i class="bi bi-arrow-repeat me-2"></i> Devolução garantida em 30 dias</p>
+                    <p><i class="bi bi-recycle me-2"></i> Produto 100% compostável e biodegradável</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição detalhada e especificações -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descrição</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">Especificações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Avaliações</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="composting-tab" data-bs-toggle="tab" data-bs-target="#composting" type="button" role="tab">Como Compostar</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4>A solução ecológica para suas refeições</h4>
+                        <p>Nosso Kit de Utensílios Biodegradáveis foi desenvolvido para quem busca praticidade sem abrir mão da sustentabilidade. Perfeito para festas, piqueniques, escritórios ou uso doméstico, oferece uma experiência completa sem gerar resíduos plásticos.</p>
+                        
+                        <h5>Benefícios ambientais:</h5>
+                        <p>Ao escolher nossos utensílios biodegradáveis, você está contribuindo para a redução do plástico de uso único nos oceanos e aterros. Cada kit pode substituir até 40 utensílios plásticos convencionais, que levam mais de 400 anos para se decompor.</p>
+                        
+                        <h5>Vantagens do produto:</h5>
+                        <p>Nossos utensílios são resistentes à água quente e gordura, não amolecem durante o uso e são totalmente seguros para contato com alimentos. Após o uso, podem ser compostados em casa ou descartados no lixo orgânico, onde se decompõem em até 90 dias.</p>
+                        
+                        <h5>Produção sustentável:</h5>
+                        <p>Nossos produtos são fabricados com processos de baixo impacto ambiental, utilizando energias renováveis e respeitando os princípios do comércio justo. Todo o ciclo de produção é pensado para minimizar a pegada de carbono.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="specs" role="tabpanel">
+                        <table class="table">
+                            <tr>
+                                <th>Material</th>
+                                <td>Fécula de mandioca, fibra de bambu e amido de milho</td>
+                            </tr>
+                            <tr>
+                                <th>Biodegradabilidade</th>
+                                <td>90-180 dias em condições ideais de compostagem</td>
+                            </tr>
+                            <tr>
+                                <th>Resistência térmica</th>
+                                <td>Até 85°C - ideal para alimentos quentes</td>
+                            </tr>
+                            <tr>
+                                <th>Tempo de uso</th>
+                                <td>Até 4 horas sem amolecer (para alimentos quentes)</td>
+                            </tr>
+                            <tr>
+                                <th>Certificações</th>
+                                <td>BPI Compostable, OK Compost HOME, ANVISA</td>
+                            </tr>
+                            <tr>
+                                <th>Embalagem</th>
+                                <td>Papel kraft reciclado e compostável</td>
+                            </tr>
+                            <tr>
+                                <th>Origem</th>
+                                <td>Produzido no Brasil com materiais nacionais</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="me-3">
+                                <h2 class="mb-0">4.2</h2>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                                <p class="text-muted mb-0">Baseado em 87 avaliações</p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#reviewModal">Deixar avaliação</button>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top pt-3">
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">CR</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Carlos Rodrigues</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Usei no aniversário da minha filha e todos adoraram! Resistente e cumpre o que promete. Melhor que plástico e sem culpa ambiental.</p>
+                                    <small class="text-muted">Postado em 18 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">AS</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Amanda Santos</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <p class="mb-1">Gostei muito, mas a faca não corta tão bem quanto as de plástico. Para tudo mais são perfeitos! Compro de novo.</p>
+                                    <small class="text-muted">Postado em 10 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <span class="text-white">PL</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Paulo Lima</h5>
+                                    <div class="rating small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="mb-1">Uso no meu restaurante e meus clientes amam a iniciativa sustentável. Já virou até assunto nas redes sociais!</p>
+                                    <small class="text-muted">Postado em 5 de Agosto, 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="composting" role="tabpanel">
+                        <h4>Como descartar corretamente seus utensílios</h4>
+                        <p>Nossos utensílios são 100% biodegradáveis e compostáveis. Seguindo as instruções corretas, você pode transformá-los em adubo de qualidade para suas plantas.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-house-check-fill text-success me-2"></i> Compostagem Doméstica</h5>
+                                        <p>Quebre os utensílios em pedaços menores e adicione à sua composteira caseira. Misture com outros materiais orgânicos e revolva periodicamente.</p>
+                                        <p class="mb-0"><strong>Tempo de decomposição:</strong> 90-120 dias</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light border-0 mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-building text-primary me-2"></i> Compostagem Industrial</h5>
+                                        <p>Se não tiver composteira em casa, descarte no lixo orgânico. Em usinas de compostagem, o processo é mais rápido devido às condições controladas.</p>
+                                        <p class="mb-0"><strong>Tempo de decomposição:</strong> 45-60 dias</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h5><i class="bi bi-info-circle me-2"></i> Importante</h5>
+                            <p class="mb-0">Nossos utensílios são projetados para se biodegradarem mesmo em aterros sanitários, embora o processo seja mais lento. Eles não geram microplásticos nem liberam toxinas no meio ambiente.</p>
+                        </div>
+                        
+                        <h5 class="mt-4">O que NÃO fazer:</h5>
+                        <ul>
+                            <li>Não recicle com plásticos - contamine toda a cadeia de reciclagem</li>
+                            <li>Não queime - apesar de naturais, a combustão libera CO₂</li>
+                            <li>Não descarte em corpos d'água - embora biodegradáveis, ainda causam impacto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos relacionados -->
+        <div class="related-products">
+            <h3 class="mb-4">Produtos Relacionados</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/garrafa.png" class="card-img-top" alt="Garrafa Reutilizável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Garrafa Reutilizável Premium</h5>
+                            <p class="card-text">Garrafa de aço inoxidável, mantém temperatura por 24h.</p>
+                            <p class="fw-bold text-success">R$ 89,90</p>
+                            <a href="garrafa.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/kit.png" class="card-img-top" alt="Kit Limpeza Natural">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kit Produtos de Limpeza Natural</h5>
+                            <p class="card-text">Produtos biodegradáveis sem químicos nocivos.</p>
+                            <p class="fw-bold text-success">R$ 124,90</p>
+                            <a href="limpeza.html" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="../../img/embalagem.jpg" class="card-img-top" alt="Embalagens Compostáveis">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Embalagens Compostáveis</h5>
+                            <p class="card-text">Pratos e bowls biodegradáveis para alimentos.</p>
+                            <p class="fw-bold text-success">R$ 39,90</p>
+                            <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para avaliação -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Avaliar Produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Avaliação</label>
+                            <div class="rating-input">
+                                <i class="bi bi-star fs-3 me-1" data-value="1"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="2"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="3"></i>
+                                <i class="bi bi-star fs-3 me-1" data-value="4"></i>
+                                <i class="bi bi-star fs-3" data-value="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Título da avaliação</label>
+                            <input type="text" class="form-control" id="reviewTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Sua avaliação</label>
+                            <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Como você descartou os utensílios?</label>
+                            <select class="form-control">
+                                <option>Compostagem caseira</option>
+                                <option>Lixo orgânico</option>
+                                <option>Ainda não descartei</option>
+                                <option>Outro método</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
@@ -65,10 +438,10 @@
                 <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
                     <h5 class="mb-3">Links Úteis</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Início</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Produtos</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Contato</a></li>
+                        <li><a href="../../index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li><a href="../produtos.html" class="text-white-50 text-decoration-none">Produtos</a></li>
+                        <li><a href="../sobre.html" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="../contato.html" class="text-white-50 text-decoration-none">Contato</a></li>
                     </ul>
                 </div>
                 
@@ -98,4 +471,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../script/carrinho.js"></script>
+    <script src="../../script/script.js"></script>
+</body>
 </html>

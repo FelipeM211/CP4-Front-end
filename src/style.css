@@ -228,6 +228,12 @@ body {
 .rodape a:hover {
     color: var(--verde-claro) !important;
 }
+footer.rodape {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 40px 0;
+  width: 100%;
+}
 
 .redes-sociais a {
     display: inline-block;
@@ -371,3 +377,215 @@ body {
 .sobre-empresa img {
   object-fit: cover;
 }
+
+
+.product-gallery {
+            margin-bottom: 15px;
+        }
+        .gallery-thumbnail {
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .gallery-thumbnail:hover, .gallery-thumbnail.active {
+            opacity: 1;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-price {
+            font-size: 1.8rem;
+            color: #28a745;
+            margin: 15px 0;
+        }
+        .quantity-selector {
+            width: 120px;
+        }
+        .product-features {
+            margin: 20px 0;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+        }
+        .related-products {
+            margin-top: 50px;
+        }
+
+
+
+        .product-gallery {
+            margin-bottom: 15px;
+        }
+        .gallery-thumbnail {
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            border-radius: 8px;
+        }
+        .gallery-thumbnail:hover, .gallery-thumbnail.active {
+            opacity: 1;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-price {
+            font-size: 1.8rem;
+            color: #28a745;
+            margin: 15px 0;
+        }
+        .quantity-selector {
+            width: 120px;
+        }
+        .product-features {
+            margin: 20px 0;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+        }
+        .related-products {
+            margin-top: 50px;
+        }
+        .eco-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .composition-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .composition-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: #28a745;
+        }
+
+        .product-gallery {
+            margin-bottom: 15px;
+        }
+        .gallery-thumbnail {
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            border-radius: 8px;
+        }
+        .gallery-thumbnail:hover, .gallery-thumbnail.active {
+            opacity: 1;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-price {
+            font-size: 1.8rem;
+            color: #28a745;
+            margin: 15px 0;
+        }
+        .quantity-selector {
+            width: 120px;
+        }
+        .product-features {
+            margin: 20px 0;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+        }
+        .related-products {
+            margin-top: 50px;
+        }
+        .eco-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .color-options {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .color-option.active {
+            border-color: #28a745;
+        }
+        .color-natural { background-color: #f5f5dc; }
+        .color-green { background-color: #8fbc8f; }
+        .color-blue { background-color: #add8e6; }
+        .color-white { background-color: #ffffff; border: 1px solid #ddd; }
+        .size-options {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .size-option {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .size-option.active {
+            border-color: #28a745;
+            background-color: #e8f5e9;
+            color: #28a745;
+        }
+        .product-benefit {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .benefit-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #28a745;
+            font-size: 1.2rem;
+        }
+        .fabric-composition {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .composition-bar {
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .composition-fill {
+            height: 100%;
+            border-radius: 5px;
+        }
+        .cotton-fill { background-color: #28a745; width: 85%; }
+        .bamboo-fill { background-color: #20c997; width: 10%; }
+        .recycled-fill { background-color: #fd7e14; width: 5%; }
